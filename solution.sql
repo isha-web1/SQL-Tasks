@@ -26,3 +26,71 @@ VALUES ('Human Resources', 1),
     ('Engineering', 4);
 
 SELECT * FROM departments;
+
+
+-- insert data into employees table
+INSERT INTO
+    employees (
+        first_name,
+        last_name,
+        hire_date,
+        salary,
+        department_id,
+        is_active
+    )
+VALUES (
+        'John',
+        'Doe',
+        '2021-05-10',
+        50000.00,
+        1,
+        TRUE
+    ),
+    (
+        'Jane',
+        'Smith',
+        '2022-03-15',
+        62000.00,
+        2,
+        TRUE
+    ),
+    (
+        'Alice',
+        'Johnson',
+        '2023-01-20',
+        55000.00,
+        1,
+        FALSE
+    ),
+    (
+        'Bob',
+        'Davis',
+        '2020-11-30',
+        72000.00,
+        3,
+        TRUE
+    );
+
+SELECT * FROM employees;
+
+
+INSERT INTO
+    employees (
+        first_name,
+        last_name,
+        hire_date,
+        salary,
+        department_id,
+        is_active
+    )
+VALUES (
+        'Isha',
+        'khan',
+        '2021-05-10',
+        50000.00,
+        15,
+        TRUE
+    );
+
+    -- Select all active employees.
+SELECT * FROM employees WHERE is_active = TRUE;
